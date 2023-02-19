@@ -24,12 +24,20 @@
     </properties>
 
     <repositories>
+                <repository>
+                    <id>scala-tools.org</id>
+                    <name>Scala-Tools Maven2 Repository</name>
+                    <url>http://scala-tools.org/repo-releases</url>
+                </repository>
+            </repositories>
+
+    <distributionManagement>
         <repository>
-            <id>scala-tools.org</id>
-            <name>Scala-Tools Maven2 Repository</name>
-            <url>http://scala-tools.org/repo-releases</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/hoaihuongbk/jvm-profiler</url>
         </repository>
-    </repositories>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
